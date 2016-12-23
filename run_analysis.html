@@ -206,7 +206,7 @@ hr {
 <body>
 <h1>run_analysis</h1>
 
-<p>Last updated 2016-12-23 21:21:01 using R version 3.1.2 (2014-10-31).</p>
+<p>Last updated 2016-12-23 23:52:13 using R version 3.1.2 (2014-10-31).</p>
 
 <h2>Instructions for project</h2>
 
@@ -495,21 +495,10 @@ dtTidy &lt;- dt[, list(count = .N, average = mean(value)), by=key(dt)]
 <pre><code class="r">knit(&quot;makeCodebook.Rmd&quot;, output=&quot;codebook.md&quot;, encoding=&quot;ISO8859-1&quot;, quiet=TRUE)
 </code></pre>
 
-<pre><code>## Warning in readLines(if (is.character(input2)) {: cannot open file
-## &#39;makeCodebook.Rmd&#39;: No such file or directory
-</code></pre>
-
-<pre><code>## Error in readLines(if (is.character(input2)) {: cannot open the connection
+<pre><code>## [1] &quot;codebook.md&quot;
 </code></pre>
 
 <pre><code class="r">markdownToHTML(&quot;codebook.md&quot;, &quot;codebook.html&quot;)
-</code></pre>
-
-<pre><code>## Warning in readLines(con): cannot open file &#39;codebook.md&#39;: No such file or
-## directory
-</code></pre>
-
-<pre><code>## Error in readLines(con): cannot open the connection
 </code></pre>
 
 </body>

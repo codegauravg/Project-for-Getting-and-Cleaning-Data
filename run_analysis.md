@@ -1,6 +1,6 @@
 run_analysis
 ============
-Last updated 2016-12-23 21:21:01 using R version 3.1.2 (2014-10-31).
+Last updated 2016-12-23 23:52:13 using R version 3.1.2 (2014-10-31).
 
 
 Instructions for project
@@ -362,23 +362,9 @@ knit("makeCodebook.Rmd", output="codebook.md", encoding="ISO8859-1", quiet=TRUE)
 ```
 
 ```
-## Warning in readLines(if (is.character(input2)) {: cannot open file
-## 'makeCodebook.Rmd': No such file or directory
-```
-
-```
-## Error in readLines(if (is.character(input2)) {: cannot open the connection
+## [1] "codebook.md"
 ```
 
 ```r
 markdownToHTML("codebook.md", "codebook.html")
-```
-
-```
-## Warning in readLines(con): cannot open file 'codebook.md': No such file or
-## directory
-```
-
-```
-## Error in readLines(con): cannot open the connection
 ```
