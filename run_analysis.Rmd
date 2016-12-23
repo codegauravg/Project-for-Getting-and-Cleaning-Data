@@ -75,11 +75,6 @@ pathIn <- file.path(path, "UCI HAR Dataset")
 list.files(pathIn, recursive=TRUE)
 ```
 
-**See the `README.txt` file in `r path` for detailed information on the dataset.**
-
-For the purposes of this project, the files in the `Inertial Signals` folders are not used.
-
-
 Read the files
 --------------
 
@@ -248,9 +243,6 @@ r1 <- nrow(dt[, .N, by=c("feature")])
 r2 <- nrow(dt[, .N, by=c("featDomain", "featAcceleration", "featInstrument", "featJerk", "featMagnitude", "featVariable", "featAxis")])
 r1 == r2
 ```
-
-Yes, I accounted for all possible combinations. `feature` is now redundant.
-
 
 
 Create a tidy data set
